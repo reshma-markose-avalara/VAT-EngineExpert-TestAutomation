@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <AnalyseDocument xmlns="http://tempuri.org/">
+      <document><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://www.vatat.com/xml/vatat_invoice_view_jscript.xsl"?>
+<iVATEngineInput>
+<IncludeReportingIndicationInResponse>True</IncludeReportingIndicationInResponse>
+	<Supplier>
+		<ID>112210</ID>
+		<Name>AECOMPANY</Name>
+		<Address/>
+		<ZIP/>
+		<City/>
+		<Country>AEDB</Country>
+		<RegOfCommerce/>
+		<BancAccountNumber/>
+		<IBAN/>
+		<BIC/>
+		<TelephoneNumber/>
+		<FaxNumber/>
+		<EmailAddress/>
+		<SpecialType>0</SpecialType>
+		<DeductionType>0</DeductionType>
+		<VATNumberSupplier Country="AE">
+			<VATNumber>AE123456789</VATNumber>
+			<VATNumberType>1</VATNumberType>
+			<Name/>
+			<Address1/>
+			<Address2/>
+			<Address3/>
+			<TaxNumber/>
+			<BelongsToFiscalUnit>0</BelongsToFiscalUnit>
+		</VATNumberSupplier>
+		<CountryChosenVATNumber>AEDB</CountryChosenVATNumber>
+	</Supplier>
+	<Customer>
+		<ID>112211</ID>
+		<Name>AECOMPANY B</Name>
+		<Address>2</Address>
+		<ZIP/>
+		<City/>
+		<EmailAddress/>
+		<Country>AE</Country>
+		<SpecialType>0</SpecialType>
+		<VATNumberCustomer Country="AE">
+			<VATNumber>AE123456780</VATNumber>
+			<VATNumberType>1</VATNumberType>
+			<Name/>
+			<Address1/>
+			<Address2/>
+			<Address3/>
+			<RequiredOnInvoicePicture>false</RequiredOnInvoicePicture>
+			<BelongsToFiscalUnit>1</BelongsToFiscalUnit>
+		</VATNumberCustomer>
+		<CountryChosenVATNumber>AE</CountryChosenVATNumber>
+	</Customer>
+	<InvoiceProperties>
+		<DocumentType>0</DocumentType>
+		<Disconto>0</Disconto>
+		<Currency1>EUR</Currency1>
+		<InvoiceNumber/>
+		<ReferenceInvoiceNumber/>
+		<InvoiceDate>2018-10-01</InvoiceDate>
+		<OfficialLanguage>3</OfficialLanguage>
+	</InvoiceProperties>
+	<Item ID="1">
+		<Properties>
+			<Description/>
+			<InternationalDescription LanguageID="1">opslag van goederen (-265-)</InternationalDescription>
+			<InternationalDescription LanguageID="2">entreposages des biens (-265-)</InternationalDescription>
+			<InternationalDescription LanguageID="3">storage of goods (-265-)</InternationalDescription>
+			<InternationalDescription LanguageID="4">servicios de almacenamiento (-265-)</InternationalDescription>
+			<InternationalDescription LanguageID="5">Lagerhaltung von Gütern (-265 -)</InternationalDescription>
+			<InternationalDescription LanguageID="15">servicios de almacenamiento de gases o líquidos a granel (-265-)</InternationalDescription>
+			<TaricCode/>
+			<CPCCode/>
+			<Amounts CurrencyNumber="1">
+				<UnitPriceExclVAT>100</UnitPriceExclVAT>
+				<TotalAmountExclVAT>100</TotalAmountExclVAT>
+				<PackagingCosts>0</PackagingCosts>
+			</Amounts>
+			<Number>1</Number>
+			<Unit/>
+			<VATRate>5</VATRate>
+			<Reduction>0</Reduction>
+			<AdditionalProperties>
+				<PropertiesPerCountry Country="AE">
+					<VATRateCode>S</VATRateCode>
+				</PropertiesPerCountry>
+				<EngineParameter1/>
+				<EngineParameter2>I0000000000A</EngineParameter2>
+				<EngineParameter3/>
+			</AdditionalProperties>
+			<ItemClassificationCode>265</ItemClassificationCode>
+			<OutOfVAT>0</OutOfVAT>
+		</Properties>
+		<Conditions>
+			<ContinuousSupply>0</ContinuousSupply>
+			<DateTransaction>2018-10-01</DateTransaction>
+		</Conditions>
+		<AdditionalMentioning>
+			<Text>Service provided with the VAT number in United Arab Emirates</Text>
+		</AdditionalMentioning>
+	</Item>
+</iVATEngineInput>]]></document>
+    </AnalyseDocument>
+  </soap:Body>
+</soap:Envelope>
