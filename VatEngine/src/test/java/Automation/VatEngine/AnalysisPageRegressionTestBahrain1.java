@@ -267,7 +267,8 @@ public class AnalysisPageRegressionTestBahrain1 {
 			  AnalysisPageBahrain1 analysis = PageFactory.initElements(driver, AnalysisPageBahrain1.class);
 			  Assert.assertTrue(analysis.BH_29_RentingVehicle(), "BH_29 not working fine");
 			  logger.log(LogStatus.PASS, "BH_29 working fine");
-		  }	  
+		  }
+	  //sedqwdqwd
 ////	  //errr in this scenario
 //////	  @Test(priority=30)
 //////		 public void BH_30_RentingVehicle() throws InterruptedException {
