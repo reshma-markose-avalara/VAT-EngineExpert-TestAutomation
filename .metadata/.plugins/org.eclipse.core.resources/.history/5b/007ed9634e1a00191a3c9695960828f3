@@ -204,9 +204,6 @@ public class AnalysisPageRegressionTestBahrain1 {
 	  }
 
 //Hello all	  
-	  //tkjkjjhhhj
-	  //kjlkjjkkjkj
-	  //ppppp
 // VEN-231 scenarios
 	  @Test(priority=21)
 		 public void BH_21_RentingVehicle() throws InterruptedException {
