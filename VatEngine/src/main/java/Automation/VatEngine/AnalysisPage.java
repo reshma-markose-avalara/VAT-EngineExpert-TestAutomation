@@ -18,6 +18,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
+
 public class AnalysisPage {
 	
 
@@ -189,6 +190,10 @@ WebElement PurchaseInvoiceLinesDetails;
 @FindBy(how=How.CSS,using="td.InvoiceLineFooterAmountCell:nth-of-type(2)")
 @CacheLookup
 WebElement taxAmount;
+
+@FindBy(how=How.CSS,using="select[title*='Where is the service rendered'][class='LargeSizeControl']")
+@CacheLookup
+WebElement PlaceOfService;
 
 // start :test 1 to 27 is unit test for VatExpert
 public boolean Test1() throws InterruptedException
@@ -1551,6 +1556,327 @@ public boolean test_GCC17() throws InterruptedException
 		return false;
 }
 
+public boolean TestGCC1_Cultural() throws InterruptedException
+{
+	startNewAnalysis();
+	nextMonth();
+	Jan2019();
+	selectSupplier("TEST BAHRAIN ESTABLISHED AND REGISTERED");
+	selectCustomer("TEST BAHRAIN ESTABLISHED AND REGISTERED B");
+	selectItem("Cultural, Artistic, Sports and Recreational Services");
+	selectPlaceOfServiceCountry("Bahrain");
+	selectCustomewerVatCountry("Bahrain");
+	selectPlaceOfServiceGCC("Bahrain");
+	waitForMentioningOrInvoiceLine();
+	if(	(getTaxAmount().contains("50.00"))  )
+	{
+		return true;
+	}
+	else	
+		return false;	
+}
+
+public boolean TestGCC2_Cultural() throws InterruptedException
+{
+	startNewAnalysis();
+	nextMonth();
+	Jan2019();
+	selectSupplier("TEST BAHRAIN ESTABLISHED AND REGISTERED");
+	selectCustomer("TEST BAHRAIN - ESTABLISHED NON REGISTERED ECONOMIC ACTIVITY");
+	selectItem("Cultural, Artistic, Sports and Recreational Services");
+	selectPlaceOfServiceCountry("Bahrain");
+	selectPlaceOfServiceGCC("Bahrain");
+	waitForMentioningOrInvoiceLine();
+	if(	(getTaxAmount().contains("50.00"))  )
+	{
+		return true;
+	}
+	else	
+		return false;	
+}
+
+public boolean TestGCC3_Cultural() throws InterruptedException
+{
+	startNewAnalysis();
+	nextMonth();
+	Jan2019();
+	selectSupplier("TEST BAHRAIN ESTABLISHED AND REGISTERED");
+	selectCustomer("TEST BAHRAIN - ESTABLISHED NON REGISTERED NON TAXABLE ACTIVITY");
+	selectItem("Cultural, Artistic, Sports and Recreational Services");
+	selectPlaceOfServiceCountry("Bahrain");
+	selectPlaceOfServiceGCC("Bahrain");
+	waitForMentioningOrInvoiceLine();
+	if(	(getTaxAmount().contains("50.00"))  )
+	{
+		return true;
+	}
+	else	
+		return false;	
+}
+
+public boolean TestGCC4_Cultural() throws InterruptedException
+{
+	startNewAnalysis();
+	nextMonth();
+	Jan2019();
+	selectSupplier("TEST BAHRAIN ESTABLISHED AND REGISTERED");
+	selectCustomer("TEST BAHRAIN - BAHRAIN PRIVATE PERSON");
+	selectItem("Cultural, Artistic, Sports and Recreational Services");
+	selectPlaceOfServiceCountry("Bahrain");
+	selectPlaceOfServiceGCC("Bahrain");
+	waitForMentioningOrInvoiceLine();
+	if(	(getTaxAmount().contains("50.00"))  )
+	{
+		return true;
+	}
+	else	
+		return false;	
+}
+
+public boolean TestGCC5_Cultural() throws InterruptedException
+{
+	startNewAnalysis();
+	nextMonth();
+	Jan2019();
+	selectSupplier("TEST BAHRAIN ESTABLISHED AND REGISTERED");
+	selectCustomer("TEST BAHRAIN - NON ESTABLISHED REGISTERED IN BAHRAIN");
+	selectItem("Cultural, Artistic, Sports and Recreational Services");
+	selectPlaceOfServiceCountry("Bahrain");
+	selectCustomewerVatCountry("Bahrain");
+	selectPlaceOfServiceGCC("Bahrain");
+	waitForMentioningOrInvoiceLine();
+	if(	(getTaxAmount().contains("50.00"))  )
+	{
+		return true;
+	}
+	else	
+		return false;	
+}
+
+public boolean TestGCC6_Cultural() throws InterruptedException
+{
+	startNewAnalysis();
+	nextMonth();
+	Jan2019();
+	selectSupplier("TEST BAHRAIN - NON ESTABLISHED REGISTERED IN BAHRAIN");
+	selectCustomer("TEST BAHRAIN ESTABLISHED AND REGISTERED");
+	selectItem("Cultural, Artistic, Sports and Recreational Services");
+	selectPlaceOfServiceCountry("Bahrain");
+	selectCustomewerVatCountry("Bahrain");
+	selectPlaceOfServiceGCC("Bahrain");
+	waitForMentioningOrInvoiceLine();
+	if(	(getTaxAmount().contains("0.00"))  )
+	{
+		return true;
+	}
+	else	
+		return false;	
+}
+
+public boolean TestGCC7_Cultural() throws InterruptedException
+{
+	startNewAnalysis();
+	nextMonth();
+	Jan2019();
+	selectSupplier("TEST BAHRAIN - NON ESTABLISHED NOT REGISTERED TAXABLE ACTIVITY");
+	selectCustomer("TEST BAHRAIN - NON ESTABLISHED REGISTERED IN BAHRAIN");
+	selectItem("Cultural, Artistic, Sports and Recreational Services");
+	selectPlaceOfServiceGCC("Bahrain");
+	selectCustomewerVatCountry("Bahrain");
+	waitForMentioningOrInvoiceLine();
+	if(	(getTaxAmount().contains("50.00"))  )
+	{
+		return true;
+	}
+	else	
+		return false;	
+}
+
+public boolean TestGCC8_Cultural() throws InterruptedException
+{
+	startNewAnalysis();
+	nextMonth();
+	Jan2019();
+	selectSupplier("TEST BAHRAIN - NON ESTABLISHED NOT REGISTERED TAXABLE ACTIVITY");
+	selectCustomer("TEST BAHRAIN ESTABLISHED AND REGISTERED");
+	selectItem("Cultural, Artistic, Sports and Recreational Services");
+	selectPlaceOfServiceCountry("Bahrain");
+	selectCustomewerVatCountry("Bahrain");
+	selectPlaceOfServiceGCC("Bahrain");
+	waitForMentioningOrInvoiceLine();
+	if(	(getTaxAmount().contains("0.00"))  )
+	{
+		return true;
+	}
+	else	
+		return false;	
+}
+//public boolean TestGCC9_Cultural() throws InterruptedException
+//{
+//	startNewAnalysis();
+//	nextMonth();
+//	Jan2019();
+//	selectSupplier("TEST BAHRAIN - NON ESTABLISHED REGISTERED IN BAHRAIN");
+//	selectCustomer("TEST BAHRAIN - NON ESTABLISHED REGISTERED IN BAHRAIN B");
+//	selectItem("Cultural, Artistic, Sports and Recreational Services");
+//	selectPlaceOfServiceGCC("Bahrain");
+//	waitForMentioningOrInvoiceLine();
+//	if(	(getTaxAmount().contains("50.00"))  )
+//	{
+//		return true;
+//	}
+//	else	
+//		return false;	
+//}
+public boolean TestGCC10_Cultural() throws InterruptedException
+{
+	startNewAnalysis();
+	nextMonth();
+	Jan2019();
+	selectSupplier("TEST BAHRAIN ESTABLISHED AND REGISTERED");
+	selectCustomer("TEST BAHRAIN - NON ESTABLISHED NOT REGISTERED TAXABLE ACTIVITY");
+	selectItem("Cultural, Artistic, Sports and Recreational Services");
+	selectPlaceOfServiceCountry("Bahrain");
+	selectCustomewerVatCountry("Bahrain");
+	waitForMentioningOrInvoiceLine();
+	if(	(getTaxAmount().contains("50.00"))  )
+	{
+		return true;
+	}
+	else	
+		return false;	
+}
+
+//public boolean TestGCC11_Cultural() throws InterruptedException
+//{
+//	startNewAnalysis();
+//	nextMonth();
+//	Jan2019();
+//	selectSupplier("TEST BAHRAIN ESTABLISHED AND REGISTERED");
+//	selectCustomer("TEST BAHRAIN - NON ESTABLISHED NOT REGISTERED TAXABLE ACTIVITY");
+//	selectItem("Cultural, Artistic, Sports and Recreational Services");
+//	selectPlaceOfServiceCountry("Bahrain");
+//	selectPlaceOfServiceGCC("Bahrain");
+//	waitForMentioningOrInvoiceLine();
+//	if(	(getTaxAmount().contains("50.00"))  )
+//	{
+//		return true;
+//	}
+//	else	
+//		return false;	
+//}
+//public boolean TestGCC12_Cultural() throws InterruptedException
+//{
+//	startNewAnalysis();
+//	nextMonth();
+//	Jan2019();
+//	selectSupplier("TEST BAHRAIN - NON ESTABLISHED REGISTERED IN BAHRAIN");
+//	selectCustomer("TEST BAHRAIN - ESTABLISHED NON REGISTERED NON TAXABLE ACTIVITY");
+//	selectItem("Cultural, Artistic, Sports and Recreational Services");
+//	selectPlaceOfServiceCountry("Bahrain");
+//	selectPlaceOfServiceGCC("Bahrain");
+//	waitForMentioningOrInvoiceLine();
+//	if(	(getTaxAmount().contains("50.00"))  )
+//	{
+//		return true;
+//	}
+//	else	
+//		return false;	
+//}
+//public boolean TestGCC13_Cultural() throws InterruptedException
+//{
+//	startNewAnalysis();
+//	nextMonth();
+//	Jan2019();
+//	selectSupplier("TEST BAHRAIN - NON ESTABLISHED NOT REGISTERED TAXABLE ACTIVITY");
+//	selectCustomer("TEST BAHRAIN - ESTABLISHED NON REGISTERED NON TAXABLE ACTIVITY");
+//	selectItem("Cultural, Artistic, Sports and Recreational Services");
+//	selectPlaceOfServiceCountry("Bahrain");
+//	selectPlaceOfServiceGCC("Bahrain");
+//	waitForMentioningOrInvoiceLine();
+//	if(	(getTaxAmount().contains("50.00"))  )
+//	{
+//		return true;
+//	}
+//	else	
+//		return false;	
+//}
+//
+//public boolean TestGCC15_Cultural() throws InterruptedException
+//{
+//	startNewAnalysis();
+//	nextMonth();
+//	Jan2019();
+//	selectSupplier("TEST BAHRAIN ESTABLISHED AND REGISTERED");
+//	selectCustomer("TEST BAHRAIN - BAHRAIN PRIVATE PERSON");
+//	selectItem("Cultural, Artistic, Sports and Recreational Services");
+//	selectPlaceOfServiceCountry("Bahrain");
+//	selectPlaceOfServiceGCC("Bahrain");
+//	waitForMentioningOrInvoiceLine();
+//	if(	(getTaxAmount().contains("50.00"))  )
+//	{
+//		return true;
+//	}
+//	else	
+//		return false;	
+//}
+//
+//public boolean TestGCC16_Cultural() throws InterruptedException
+//{
+//	startNewAnalysis();
+//	nextMonth();
+//	Jan2019();
+//	selectSupplier("TEST BAHRAIN ESTABLISHED AND REGISTERED");
+//	selectCustomer("TEST BAHRAIN - BAHRAIN PRIVATE PERSON");
+//	selectItem("Cultural, Artistic, Sports and Recreational Services");
+//	selectPlaceOfServiceCountry("Bahrain");
+//	selectPlaceOfServiceGCC("Bahrain");
+//	waitForMentioningOrInvoiceLine();
+//	if(	(getTaxAmount().contains("50.00"))  )
+//	{
+//		return true;
+//	}
+//	else	
+//		return false;	
+//}
+//
+//public boolean TestGCC17_Cultural() throws InterruptedException
+//{
+//	startNewAnalysis();
+//	nextMonth();
+//	Jan2019();
+//	selectSupplier("TEST BAHRAIN - NON ESTABLISHED NOT REGISTERED TAXABLE ACTIVITY");
+//	selectCustomer("TEST BAHRAIN - BAHRAIN PRIVATE PERSON");
+//	selectItem("Cultural, Artistic, Sports and Recreational Services");
+//	selectPlaceOfServiceCountry("Bahrain");
+//	selectPlaceOfServiceGCC("Bahrain");
+//	waitForMentioningOrInvoiceLine();
+//	if(	(getTaxAmount().contains("50.00"))  )
+//	{
+//		return true;
+//	}
+//	else	
+//		return false;	
+//}
+//public boolean TestGCC18_Cultural() throws InterruptedException
+//{
+//	startNewAnalysis();
+//	nextMonth();
+//	Jan2019();
+//	selectSupplier("TEST BAHRAIN ESTABLISHED AND REGISTERED");
+//	selectCustomer("TEST BAHRAIN - BAHRAIN PRIVATE PERSON");
+//	selectItem("Cultural, Artistic, Sports and Recreational Services");
+//	selectPlaceOfServiceCountry("Bahrain");
+//	selectPlaceOfServiceGCC("Bahrain");
+//	waitForMentioningOrInvoiceLine();
+//	if(	(getTaxAmount().contains("50.00"))  )
+//	{
+//		return true;
+//	}
+//	else	
+//		return false;	
+//}
+
 public String getTaxAmount() {
 	return  driver.findElements(By.className("InvoiceLineFooterAmountCell")).get(1).getText();
 	//return taxAmount.getText();
@@ -1617,6 +1943,34 @@ public  void selectMonthEndTransactionDate() throws InterruptedException {
 	for(WebElement temp:alldatealinks)
 	{
 		if(temp.getAttribute("title").equalsIgnoreCase(lastDayOfTheMonth))
+		{
+			temp.click();Thread.sleep(2000);
+			break;
+			
+		}
+	}
+}
+
+public void nextMonth() throws InterruptedException {
+	driver.findElement(By.cssSelector(".-date")).click();
+	List<WebElement> alldatealinks = driver.findElements(By.cssSelector("table[id*='InvoiceDateCalendar'] a"));
+	for(WebElement temp:alldatealinks)
+	{
+		if(temp.getAttribute("title").equalsIgnoreCase("Go to the next month"))
+		{
+			temp.click();Thread.sleep(2000);
+			break;
+			
+		}
+	}
+}
+
+public void Jan2019() throws InterruptedException {
+	//driver.findElement(By.cssSelector(".-date")).click();
+	List<WebElement> alldatealinks = driver.findElements(By.cssSelector("table[id*='InvoiceDateCalendar'] a"));
+	for(WebElement temp:alldatealinks)
+	{
+		if(temp.getAttribute("title").equalsIgnoreCase("1 January"))
 		{
 			temp.click();Thread.sleep(2000);
 			break;
@@ -1735,6 +2089,13 @@ public  void selectPlaceOfServiceCountry(String PlaceOfService)  throws Interrup
 	Thread.sleep(4000);
 }
 
+
+public  void selectPlaceOfServiceGCC(String PlaceOfService1)  throws InterruptedException {
+	Select PlaceOfServiceCountry1 = new Select(PlaceOfService);
+	PlaceOfServiceCountry1.selectByVisibleText(PlaceOfService1);
+	Thread.sleep(4000);
+}
+
 public void selectPartialWholTransportCountry(String PartialWholTransport) throws InterruptedException {
 	Select iswholPartialTrans = new Select(PartialWholTransportSelect);
 	iswholPartialTrans.selectByVisibleText(PartialWholTransport);
@@ -1766,6 +2127,58 @@ public void jumpToElementThroughTabs(int i) throws InterruptedException {
 
 public static String lastDayOfTheMonth = "";
 public static String firstDayofNextMonth="";
+public void  get2019() {
+	Date date = Calendar.getInstance().getTime();
+    DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+    String today = formatter.format(date);
+       
+	
+    SimpleDateFormat formater = new SimpleDateFormat("dd/MM/yyyy");
+    try{
+    java.util.Date dt= formater.parse(today);
+    Calendar calendar = Calendar.getInstance();  
+    calendar.setTime(dt);  
+
+    calendar.add(Calendar.MONTH, 1);  
+    calendar.set(Calendar.DAY_OF_MONTH, 1);  
+    calendar.add(Calendar.DATE, -1);  
+
+    java.util.Date lastDay = calendar.getTime();  
+
+    lastDayOfTheMonth = formatter.format(lastDay);
+    } catch (ParseException e) {
+        e.printStackTrace();
+    }
+    
+    String month= lastDayOfTheMonth.substring(6, 10);
+   if(month.equalsIgnoreCase("01")) 
+	   {lastDayOfTheMonth= "31 January";firstDayofNextMonth= "1 February";}
+   if(month.equalsIgnoreCase("02")) 
+	   {lastDayOfTheMonth= "28 February";firstDayofNextMonth= "1 March";}
+	if(month.equalsIgnoreCase("03")) 
+	   {lastDayOfTheMonth= "31 March";firstDayofNextMonth= "1 April";}
+    if(month.equalsIgnoreCase("04")) 
+	   {lastDayOfTheMonth= "30 April";firstDayofNextMonth= "1 May";}
+	if(month.equalsIgnoreCase("05")) 
+	   {lastDayOfTheMonth= "31 May";firstDayofNextMonth= "1 June";}
+	if(month.equalsIgnoreCase("06")) 
+	   {lastDayOfTheMonth= "30 June";firstDayofNextMonth= "1 July";}
+	if(month.equalsIgnoreCase("07")) 
+	   {lastDayOfTheMonth= "31 July";firstDayofNextMonth= "1 August";}
+	if(month.equalsIgnoreCase("08")) 
+	   {lastDayOfTheMonth= "31 August";firstDayofNextMonth= "1 September";}
+	if(month.equalsIgnoreCase("09")) 
+	   {lastDayOfTheMonth= "30 September";firstDayofNextMonth= "1 October";}
+	if(month.equalsIgnoreCase("10")) 
+	   {lastDayOfTheMonth= "31 October";firstDayofNextMonth= "1 November";}
+	if(month.equalsIgnoreCase("11")) 
+	   {lastDayOfTheMonth= "30 November";firstDayofNextMonth= "1 December";}
+	if(month.equalsIgnoreCase("12")) 
+	   {lastDayOfTheMonth= "31 December";firstDayofNextMonth= "1 January";}
+																		    		    
+    //return lastDayOfTheMonth;
+}
+
 public void  getLastDayOfTheMonth() {
 	Date date = Calendar.getInstance().getTime();
     DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");

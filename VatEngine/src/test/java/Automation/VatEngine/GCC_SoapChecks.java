@@ -1,6 +1,6 @@
 package Automation.VatEngine;
 
-import java.io.BufferedReader;
+import java.io.BufferedReader; 
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.StringReader;
@@ -29,9 +29,7 @@ import org.xml.sax.SAXException;
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.io.Writer;
 
 public class GCC_SoapChecks {
@@ -74,7 +72,7 @@ public class GCC_SoapChecks {
 		setupRequest("src\\test\\resources\\GCC_test2_BE_AEcompany_goodsGold.xml");
 		response = client.newCall(request).execute();
 		String p= response.body().string();
-		System.out.println("p=="+p);
+		System.out.println(p);
 		String VatRate= getVatRate(p);
 		System.out.println("VatRate="+VatRate);
 		Assert.assertTrue(VatRate.contains("21.00"), "VatRate not matching");
@@ -325,6 +323,20 @@ public class GCC_SoapChecks {
 		Assert.assertTrue(mentioning.contains("Art. 44  Richtlijn 2006/112/EG"), "mentioning not matching");
 	*/	response.close();
 	}
+	
+	@Test(priority=18)
+	public void BH_test1_B2BHiringOfMeansofTransportServices_RentingVehicle() throws IOException, InterruptedException
+	{
+		setupRequest("src\\test\\resources\\BH_test1_B2BHiringOfMeansofTransportServices_RentingVehicle.xml");
+		response = client.newCall(request).execute();
+		String p= response.body().string();
+		System.out.println(p);
+		String VatRate= getVatRate(p);
+		System.out.println("VatRate="+VatRate);
+		Assert.assertTrue(VatRate.contains("5.00"), "VatRate not matching");
+		response.close();
+	}
+	
 	public  String getVatRate(String responseStr) {
 		 String  tax= responseStr.replaceAll("&lt;", "<");
 		 tax= tax.replaceAll("&gt;", ">");
@@ -370,6 +382,8 @@ public class GCC_SoapChecks {
 		 
 		 return boxValueMap;
 	}
+	//......................................
+	@SuppressWarnings("unused")
 	private void putInfile(String p) {
 		 BufferedWriter bufferedWriter = null;
 	        try {

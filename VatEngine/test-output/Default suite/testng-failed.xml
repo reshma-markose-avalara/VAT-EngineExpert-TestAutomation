@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="Automation.VatEngine.GCC_SoapChecks">
+        <methods>
+          <include name="GCC_test17_LocalTransportGoodsByNonResCompToUAENonResPrivCompany"/>
+          <include name="GCC_test15_LocalTransportGoodsByNonResCompToUAERegComp"/>
+          <include name="GCC_test16_LocalTransportGoodsByNonResCompToUAENonResComp"/>
+          <include name="BH_test1_B2BHiringOfMeansofTransportServices_RentingVehicle"/>
+          <include name="GCC_test8_ExportOfGoodsBE_to_KSA_by_nonRes_to_UAE_VAT_regCo"/>
+          <include name="GCC_test7_ExportOfGoodsBE_to_UAE_by_nonRes_to_UAE_VAT_regCo"/>
+          <include name="afterrun"/>
+          <include name="GCC_test2_BE_AEcompany_goodsGold"/>
+        </methods>
+      </class> <!-- Automation.VatEngine.GCC_SoapChecks -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
