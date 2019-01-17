@@ -10,3 +10,4 @@
 *.log
 *.xmi
 *.log
+.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log
