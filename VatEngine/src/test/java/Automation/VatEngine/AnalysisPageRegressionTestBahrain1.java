@@ -203,7 +203,7 @@ public class AnalysisPageRegressionTestBahrain1 {
 			  logger.log(LogStatus.PASS, "BH_20 working fine");
 	  }
 
-	  
+//Hello all	  
 // VEN-231 scenarios
 	  @Test(priority=21)
 		 public void BH_21_RentingVehicle() throws InterruptedException {
