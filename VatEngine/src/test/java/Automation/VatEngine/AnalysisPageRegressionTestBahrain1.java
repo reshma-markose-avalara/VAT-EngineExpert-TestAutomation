@@ -53,7 +53,7 @@ public class AnalysisPageRegressionTestBahrain1 {
 		extReport.endTest(logger);
 	}
 	
-//VEN-230 Testing starts here
+//VEN-230 Testing starts here for GCC
 	
 	@Test(priority=1)
 	  public void GCC_1_Cultural() throws InterruptedException {
