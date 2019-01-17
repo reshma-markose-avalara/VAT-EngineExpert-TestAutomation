@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <AnalyseDocument xmlns="http://tempuri.org/">
+      <document><![CDATA[<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://www.vatat.com/xml/vatat_invoice_view_jscript.xsl"?>
+<iVATEngineInput>
+	<Supplier>
+		<ID>21536</ID>
+		<Name>BETRADING NV</Name>
+		<Address>KERKSTRAAT 17</Address>
+		<ZIP>2000</ZIP>
+		<City>ANTWERPEN</City>
+		<Country>BE</Country>
+		<RegOfCommerce/>
+		<BancAccountNumber/>
+		<IBAN/>
+		<BIC/>
+		<TelephoneNumber/>
+		<FaxNumber/>
+		<EmailAddress/>
+		<SpecialType>8</SpecialType>
+		<DeductionType>0</DeductionType>
+		<VATNumberSupplier Country="BE">
+			<VATNumber>BE012345678</VATNumber>
+			<VATNumberType>1</VATNumberType>
+			<Name/>
+			<Address1/>
+			<Address2/>
+			<Address3/>
+			<TaxNumber/>
+			<BelongsToFiscalUnit>0</BelongsToFiscalUnit>
+		</VATNumberSupplier>
+		<CountryChosenVATNumber>BE</CountryChosenVATNumber>
+	</Supplier>
+	<Customer>
+		<ID>112210</ID>
+		<Name>AECOMPANY</Name>
+		<Address/>
+		<ZIP/>
+		<City/>
+		<EmailAddress/>
+		<Country>AE</Country>
+		<SpecialType>0</SpecialType>
+		<VATNumberCustomer Country="AE">
+			<VATNumber>AE123456789</VATNumber>
+			<VATNumberType>1</VATNumberType>
+			<Name/>
+			<Address1/>
+			<Address2/>
+			<Address3/>
+			<RequiredOnInvoicePicture>false</RequiredOnInvoicePicture>
+			<BelongsToFiscalUnit>0</BelongsToFiscalUnit>
+		</VATNumberCustomer>
+		<CountryChosenVATNumber>AE</CountryChosenVATNumber>
+	</Customer>
+	<InvoiceProperties>
+		<DocumentType>0</DocumentType>
+		<Disconto>0</Disconto>
+		<Currency1>EUR</Currency1>
+		<InvoiceNumber>2</InvoiceNumber>
+		<ReferenceInvoiceNumber/>
+		<InvoiceDate>2018-09-05</InvoiceDate>
+		<OfficialLanguage>1</OfficialLanguage>
+	</InvoiceProperties>
+	<Item ID="1">
+		<Properties>
+			<Description/>
+			<InternationalDescription LanguageID="1">opslag van goederen (-265-)</InternationalDescription>
+			<InternationalDescription LanguageID="2">entreposages des biens (-265-)</InternationalDescription>
+			<InternationalDescription LanguageID="3">storage of goods (-265-)</InternationalDescription>
+			<InternationalDescription LanguageID="4">servicios de almacenamiento (-265-)</InternationalDescription>
+			<InternationalDescription LanguageID="5">Lagerhaltung von Gütern (-265 -)</InternationalDescription>
+			<InternationalDescription LanguageID="15">servicios de almacenamiento de gases o líquidos a granel (-265-)</InternationalDescription>
+			<TaricCode/>
+			<CPCCode/>
+			<Amounts CurrencyNumber="1">
+				<UnitPriceExclVAT>100</UnitPriceExclVAT>
+				<TotalAmountExclVAT>100</TotalAmountExclVAT>
+				<PackagingCosts>0</PackagingCosts>
+			</Amounts>
+			<Number>1</Number>
+			<Unit/>
+			<VATRate>0</VATRate>
+			<Reduction>0</Reduction>
+			<AdditionalProperties>
+				<PropertiesPerCountry Country="BE">
+					<VATRateCode>S</VATRateCode>
+				</PropertiesPerCountry>
+				<PropertiesPerCountry Country="AE">
+					<VATRateCode>S</VATRateCode>
+				</PropertiesPerCountry>
+				<PropertiesPerCountry Country="AE">
+					<VATRateCode>S</VATRateCode>
+				</PropertiesPerCountry>
+				<EngineParameter1/>
+				<EngineParameter2>I0000000000A</EngineParameter2>
+				<EngineParameter3/>
+			</AdditionalProperties>
+			<OutOfVAT>0</OutOfVAT>
+			<ItemClassificationCode>265</ItemClassificationCode>
+		</Properties>
+		<Conditions>
+			<ContinuousSupply>0</ContinuousSupply>
+			<DateTransaction>2018-09-05</DateTransaction>
+		</Conditions>
+		<Mentioning Country="BE">
+			<Number>400</Number>
+			<Text>Prestation de services non soumise à la TVA belge art. 21,  § 2 CTVA / Article 44 - Directive 2006/112/EC</Text>
+		</Mentioning>
+	</Item>
+	<AmountsSummary CurrencyNumber="1">
+		<VATTotals VATRate="0">
+			<AmountDisconto>0</AmountDisconto>
+			<AmountExclVAT>100</AmountExclVAT>
+			<AmountVAT>0</AmountVAT>
+		</VATTotals>
+		<Totals>
+			<TotalAmountVAT>0</TotalAmountVAT>
+			<TotalAmountInclVAT>100</TotalAmountInclVAT>
+			<TotalAmountDisconto>0</TotalAmountDisconto>
+			<TotalAmountInclVATCash>100</TotalAmountInclVATCash>
+			<TotalAmountPackagingCosts>0</TotalAmountPackagingCosts>
+		</Totals>
+	</AmountsSummary>
+	<CheckValue>100</CheckValue>
+</iVATEngineInput>]]></document>
+    </AnalyseDocument>
+  </soap:Body>
+</soap:Envelope>
