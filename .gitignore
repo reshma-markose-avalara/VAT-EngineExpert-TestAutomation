@@ -1,2 +1,8 @@
-
+*.cfs
+*.fdt
+*.fdx
+*.frq
+*.prx
+*.tis
 *.log
+*.lock
