@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <AnalyseDocument xmlns="http://tempuri.org/">
+      <document><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://www.vatat.com/xml/vatat_invoice_view_jscript.xsl"?>
+<iVATEngineInput>
+	<Supplier>
+		<ID>112274</ID>
+		<Name>TEST BAHRAIN ESTABLISHED AND REGISTERED</Name>
+		<Address/>
+		<ZIP/>
+		<City/>
+		<Country>BH</Country>
+		<RegOfCommerce/>
+		<BancAccountNumber/>
+		<IBAN/>
+		<BIC/>
+		<TelephoneNumber/>
+		<FaxNumber/>
+		<EmailAddress/>
+		<SpecialType>0</SpecialType>
+		<DeductionType>0</DeductionType>
+		<VATNumberSupplier Country="BH">
+			<VATNumber>BH234513244</VATNumber>
+			<VATNumberType>1</VATNumberType>
+			<Name/>
+			<Address1/>
+			<Address2/>
+			<Address3/>
+			<TaxNumber/>
+			<BelongsToFiscalUnit>0</BelongsToFiscalUnit>
+		</VATNumberSupplier>
+		<CountryChosenVATNumber>BH</CountryChosenVATNumber>
+	</Supplier>
+	<Customer>
+		<ID>112270</ID>
+		<Name>TEST BAHRAIN - NON ESTABLISHED REGISTERED IN BAHRAIN</Name>
+		<Address/>
+		<ZIP/>
+		<City/>
+		<EmailAddress/>
+		<Country>ES</Country>
+		<SpecialType>0</SpecialType>
+		<VATNumberCustomer Country="BH">
+			<VATNumber>BH12378945</VATNumber>
+			<VATNumberType>3</VATNumberType>
+			<Name/>
+			<Address1/>
+			<Address2/>
+			<Address3/>
+			<RequiredOnInvoicePicture>false</RequiredOnInvoicePicture>
+			<BelongsToFiscalUnit>0</BelongsToFiscalUnit>
+		</VATNumberCustomer>
+		<CountryChosenVATNumber>BH</CountryChosenVATNumber>
+	</Customer>
+	<InvoiceProperties>
+		<DocumentType>0</DocumentType>
+		<Disconto>0</Disconto>
+		<Currency1>EUR</Currency1>
+		<InvoiceNumber/>
+		<ReferenceInvoiceNumber/>
+		<InvoiceDate>2019-01-30</InvoiceDate>
+		<OfficialLanguage>3</OfficialLanguage>
+	</InvoiceProperties>
+	<Item ID="1">
+		<Properties>
+			<Description/>
+			<InternationalDescription LanguageID="1">personenvervoer (land) (-200-)</InternationalDescription>
+			<InternationalDescription LanguageID="2">transport de personnes (-200-)</InternationalDescription>
+			<InternationalDescription LanguageID="3">transport of persons (land) (-200-)</InternationalDescription>
+			<InternationalDescription LanguageID="4">transporte de pasajeros (-200-)</InternationalDescription>
+			<InternationalDescription LanguageID="5">personenbeförderung  (-200-)</InternationalDescription>
+			<InternationalDescription LanguageID="6">tráfego de passageiros (-200-)</InternationalDescription>
+			<InternationalDescription LanguageID="7">trasporto passeggeri (-200-)</InternationalDescription>
+			<InternationalDescription LanguageID="10">henkilökuljetus (-200-)</InternationalDescription>
+			<InternationalDescription LanguageID="11">persontrafik (-200-)</InternationalDescription>
+			<InternationalDescription LanguageID="15">personu parvada?ana (-200-)</InternationalDescription>
+			<TaricCode/>
+			<CPCCode>6421</CPCCode>
+			<Amounts CurrencyNumber="1">
+				<UnitPriceExclVAT>100</UnitPriceExclVAT>
+				<TotalAmountExclVAT>100</TotalAmountExclVAT>
+				<PackagingCosts>0</PackagingCosts>
+			</Amounts>
+			<Number>1</Number>
+			<Unit/>
+			<VATRate>0</VATRate>
+			<Reduction>0</Reduction>
+			<AdditionalProperties>
+				<PropertiesPerCountry Country="BH">
+					<VATRateCode>S</VATRateCode>
+				</PropertiesPerCountry>
+				<EngineParameter1/>
+				<EngineParameter2>AA000A</EngineParameter2>
+				<EngineParameter3>A</EngineParameter3>
+			</AdditionalProperties>
+			<ItemClassificationCode>200</ItemClassificationCode>
+			<OutOfVAT>0</OutOfVAT>
+		</Properties>
+		<Conditions>
+			<ShipFrom>
+				<CountryDeparture>BH</CountryDeparture>
+			</ShipFrom>
+			<ShipTo>
+				<CountryArrival>BH</CountryArrival>
+			</ShipTo>
+			<ContinuousSupply>0</ContinuousSupply>
+			<DateTransaction>2019-01-30</DateTransaction>
+		</Conditions>
+		<Mentioning Country="BH">
+			<Number>999</Number>
+			<Text>Art 53(3) Bahrain VAT Law and Art ?? of the Bahrain VAT Regulation</Text>
+		</Mentioning>
+		<AdditionalMentioning>
+			<Text>The transport departs from Bahrain and goes to Bahrain. / El transporte sale de Bahráin y se dirige a Bahráin.</Text>
+		</AdditionalMentioning>
+	</Item>
+	<AmountsSummary CurrencyNumber="1">
+		<VATTotals VATRate="0">
+			<AmountDisconto>0</AmountDisconto>
+			<AmountExclVAT>100</AmountExclVAT>
+			<AmountVAT>0</AmountVAT>
+		</VATTotals>
+		<Totals>
+			<TotalAmountVAT>0</TotalAmountVAT>
+			<TotalAmountInclVAT>100</TotalAmountInclVAT>
+			<TotalAmountDisconto>0</TotalAmountDisconto>
+			<TotalAmountInclVATCash>100</TotalAmountInclVATCash>
+			<TotalAmountPackagingCosts>0</TotalAmountPackagingCosts>
+		</Totals>
+	</AmountsSummary>
+	<CheckValue>100</CheckValue>
+</iVATEngineInput>]]></document>
+    </AnalyseDocument>
+  </soap:Body>
+</soap:Envelope>
