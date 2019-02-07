@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <AnalyseDocument xmlns="http://tempuri.org/">
+      <document><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://www.vatat.com/xml/vatat_invoice_view_jscript.xsl"?>
+<iVATEngineInput>
+	<Supplier>
+		<ID>2837</ID>
+		<Name>BECOMPANY NV</Name>
+		<Address>TOEKOMSTSTRAAT 10</Address>
+		<ZIP>1000</ZIP>
+		<City>BRUSSEL</City>
+		<Country>BE</Country>
+		<RegOfCommerce/>
+		<BancAccountNumber/>
+		<IBAN/>
+		<BIC/>
+		<TelephoneNumber/>
+		<FaxNumber/>
+		<EmailAddress/>
+		<SpecialType>0</SpecialType>
+		<DeductionType>0</DeductionType>
+		<VATNumberSupplier Country="BE">
+			<VATNumber>BE0686731303</VATNumber>
+			<VATNumberType>1</VATNumberType>
+			<Name/>
+			<Address1/>
+			<Address2/>
+			<Address3/>
+			<TaxNumber/>
+			<BelongsToFiscalUnit>0</BelongsToFiscalUnit>
+		</VATNumberSupplier>
+		<CountryChosenVATNumber>BE</CountryChosenVATNumber>
+	</Supplier>
+	<Customer>
+		<ID>2842</ID>
+		<Name>FRCOMPANY SA</Name>
+		<Address>RUE NATIONAL 15</Address>
+		<ZIP>59800</ZIP>
+		<City>LILLE</City>
+		<Country>FR</Country>
+		<SpecialType>0</SpecialType>
+		<VATNumberCustomer Country="FR">
+			<VATNumber>FR01160568416</VATNumber>
+			<VATNumberType>1</VATNumberType>
+			<Name/>
+			<Address1/>
+			<Address2/>
+			<Address3/>
+			<RequiredOnInvoicePicture>False</RequiredOnInvoicePicture>
+			<BelongsToFiscalUnit>0</BelongsToFiscalUnit>
+		</VATNumberCustomer>
+		<CountryChosenVATNumber>FR</CountryChosenVATNumber>
+	</Customer>
+	<InvoiceProperties>
+		<DocumentType>0</DocumentType>
+		<Disconto>0</Disconto>
+		<Currency1>EUR</Currency1>
+		<InvoiceNumber/>
+		<ReferenceInvoiceNumber/>
+		<InvoiceDate>2008-10-29</InvoiceDate>
+		<OfficialLanguage>1</OfficialLanguage>
+	</InvoiceProperties>
+	<Item ID="1">
+		<Properties>
+			<Description>test 1</Description>
+			<InternationalDescription LanguageID="1">badkuipen</InternationalDescription>
+			<InternationalDescription LanguageID="2">baignoires</InternationalDescription>
+			<InternationalDescription LanguageID="3">shower-baths, sinks and wash basins</InternationalDescription>
+			<InternationalDescription LanguageID="4">bañeras</InternationalDescription>
+			<InternationalDescription LanguageID="5">badewannen</InternationalDescription>
+			<InternationalDescription LanguageID="6">banheiras</InternationalDescription>
+			<InternationalDescription LanguageID="7">vasche da bagno</InternationalDescription>
+			<InternationalDescription LanguageID="9">badekar</InternationalDescription>
+			<InternationalDescription LanguageID="10">muoviset kylpyammeet</InternationalDescription>
+			<InternationalDescription LanguageID="11">badkar</InternationalDescription>
+			<InternationalDescription LanguageID="15">du?as telpas, izlietnes un mazga?anas tvertnes</InternationalDescription>
+			<TaricCode>3922100000</TaricCode>
+			<ItemClassificationCode>100</ItemClassificationCode>
+			<Amounts CurrencyNumber="1">
+				<UnitPriceExclVAT>100</UnitPriceExclVAT>
+				<TotalAmountExclVAT>100</TotalAmountExclVAT>
+				<PackagingCosts>0</PackagingCosts>
+			</Amounts>
+			<Number>1</Number>
+			<Unit/>
+			<VATRate>0</VATRate>
+			<Reduction>0</Reduction>
+			<AdditionalProperties>
+				<PropertiesPerCountry Country="BE">
+					<VATRateCode>S</VATRateCode>
+				</PropertiesPerCountry>
+				<PropertiesPerCountry Country="FR">
+					<VATRateCode>S</VATRateCode>
+				</PropertiesPerCountry>
+				<PropertiesPerCountry Country="FR">
+					<VATRateCode>S</VATRateCode>
+				</PropertiesPerCountry>
+				<EngineParameter1>AAAA0</EngineParameter1>
+				<EngineParameter2/>
+				<EngineParameter3/>
+			</AdditionalProperties>
+			<OutOfVAT>0</OutOfVAT>
+			<ReportingProperties>
+				<CommodityCode>39221000</CommodityCode>
+			</ReportingProperties>
+		</Properties>
+		<Conditions>
+			<CountryOperation>FR</CountryOperation>
+			<Installation>0</Installation>
+			<SupplyIn>0</SupplyIn>
+			<Transporter>2</Transporter>
+			<Triangulation>1</Triangulation>
+			<ContinuousSupply>0</ContinuousSupply>
+			<DateTransaction>2008-10-29</DateTransaction>
+		</Conditions>
+		<Mentioning Country="BE">
+			<Number>1</Number>
+			<Text>Levering van goederen niet onderworpen aan Belgische BTW.  art. 15, § 2, eerste lid van het WBTW</Text>
+		</Mentioning>
+		<Mentioning Country="FR">
+			<Number>219</Number>
+			<Text>Art. 258D du C.G.I.- Taxe due par le cocontractant - Art. 283, 1, 2 et 2ter du C.G.I.</Text>
+		</Mentioning>
+		<AdditionalMentioning>
+			<Text>De goederen worden niet geïnstalleerd. / Les biens ne sont pas installés.</Text>
+		</AdditionalMentioning>
+		<AdditionalMentioning>
+			<Text>Het goed bevindt zich in Frankrijk. / Les biens se trouvent en France.</Text>
+		</AdditionalMentioning>
+	</Item>
+	<AmountsSummary CurrencyNumber="1">
+		<VATTotals VATRate="0">
+			<AmountDisconto>0</AmountDisconto>
+			<AmountExclVAT>100</AmountExclVAT>
+			<AmountVAT>0</AmountVAT>
+		</VATTotals>
+		<Totals>
+			<TotalAmountVAT>0</TotalAmountVAT>
+			<TotalAmountInclVAT>100</TotalAmountInclVAT>
+			<TotalAmountDisconto>0</TotalAmountDisconto>
+			<TotalAmountInclVATCash>100</TotalAmountInclVATCash>
+			<TotalAmountPackagingCosts>0</TotalAmountPackagingCosts>
+		</Totals>
+	</AmountsSummary>
+	<CheckValue>100</CheckValue>
+</iVATEngineInput>
+]]></document>
+    </AnalyseDocument>
+  </soap:Body>
+</soap:Envelope>

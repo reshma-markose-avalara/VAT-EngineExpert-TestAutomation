@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <AnalyseDocument xmlns="http://tempuri.org/">
+      <document><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://www.vatat.com/xml/vatat_invoice_view_jscript.xsl"?>
+<iVATEngineInput>
+<IncludeReportingIndicationInResponse>True</IncludeReportingIndicationInResponse>
+	<Supplier>
+		<ID>112270</ID>
+		<Name>TEST BAHRAIN - NON ESTABLISHED REGISTERED IN BAHRAIN</Name>
+		<Address/>
+		<ZIP/>
+		<City/>
+		<Country>ES</Country>
+		<RegOfCommerce/>
+		<BancAccountNumber/>
+		<IBAN/>
+		<BIC/>
+		<TelephoneNumber/>
+		<FaxNumber/>
+		<EmailAddress/>
+		<SpecialType>0</SpecialType>
+		<DeductionType>0</DeductionType>
+		<VATNumberSupplier Country="BH">
+			<VATNumber>BH12378945</VATNumber>
+			<VATNumberType>3</VATNumberType>
+			<Name/>
+			<Address1/>
+			<Address2/>
+			<Address3/>
+			<TaxNumber/>
+			<BelongsToFiscalUnit>0</BelongsToFiscalUnit>
+		</VATNumberSupplier>
+		<CountryChosenVATNumber>BH</CountryChosenVATNumber>
+	</Supplier>
+	<Customer>
+		<ID>112274</ID>
+		<Name>TEST BAHRAIN ESTABLISHED AND REGISTERED</Name>
+		<Address/>
+		<ZIP/>
+		<City/>
+		<EmailAddress/>
+		<Country>BH</Country>
+		<SpecialType>0</SpecialType>
+		<VATNumberCustomer Country="BH">
+			<VATNumber>BH234513244</VATNumber>
+			<VATNumberType>1</VATNumberType>
+			<Name/>
+			<Address1/>
+			<Address2/>
+			<Address3/>
+			<RequiredOnInvoicePicture>false</RequiredOnInvoicePicture>
+			<BelongsToFiscalUnit>0</BelongsToFiscalUnit>
+		</VATNumberCustomer>
+		<CountryChosenVATNumber>BH</CountryChosenVATNumber>
+	</Customer>
+	<InvoiceProperties>
+		<DocumentType>0</DocumentType>
+		<Disconto>0</Disconto>
+		<Currency1>EUR</Currency1>
+		<InvoiceNumber/>
+		<ReferenceInvoiceNumber/>
+		<InvoiceDate>2019-01-23</InvoiceDate>
+		<OfficialLanguage>4</OfficialLanguage>
+	</InvoiceProperties>
+	<Item ID="1">
+		<Properties>
+			<Description/>
+			<InternationalDescription LanguageID="3">Cultural, Artistic, Sports and Recreational Services</InternationalDescription>
+			<TaricCode/>
+			<CPCCode/>
+			<Amounts CurrencyNumber="1">
+				<UnitPriceExclVAT>100</UnitPriceExclVAT>
+				<TotalAmountExclVAT>100</TotalAmountExclVAT>
+				<PackagingCosts>0</PackagingCosts>
+			</Amounts>
+			<Number>1</Number>
+			<Unit/>
+			<VATRate>0</VATRate>
+			<Reduction>0</Reduction>
+			<AdditionalProperties>
+				<PropertiesPerCountry Country="ES">
+					<VATRateCode>S</VATRateCode>
+				</PropertiesPerCountry>
+				<PropertiesPerCountry Country="BH">
+					<VATRateCode>S</VATRateCode>
+				</PropertiesPerCountry>
+				<PropertiesPerCountry Country="BH">
+					<VATRateCode>S</VATRateCode>
+				</PropertiesPerCountry>
+				<EngineParameter1/>
+				<EngineParameter2>N</EngineParameter2>
+				<EngineParameter3/>
+			</AdditionalProperties>
+			<ItemClassificationCode>278</ItemClassificationCode>
+			<OutOfVAT>0</OutOfVAT>
+		</Properties>
+		<Conditions>
+			<CountryOperation>BH</CountryOperation>
+			<ContinuousSupply>0</ContinuousSupply>
+			<DateTransaction>2019-01-23</DateTransaction>
+		</Conditions>
+		<AdditionalMentioning>
+			<Text>El servicio se presta en Bahráin. / The service is performed in Bahrain</Text>
+		</AdditionalMentioning>
+	</Item>
+	<AmountsSummary CurrencyNumber="1">
+		<VATTotals VATRate="0">
+			<AmountDisconto>0</AmountDisconto>
+			<AmountExclVAT>100</AmountExclVAT>
+			<AmountVAT>0</AmountVAT>
+		</VATTotals>
+		<Totals>
+			<TotalAmountVAT>0</TotalAmountVAT>
+			<TotalAmountInclVAT>100</TotalAmountInclVAT>
+			<TotalAmountDisconto>0</TotalAmountDisconto>
+			<TotalAmountInclVATCash>100</TotalAmountInclVATCash>
+			<TotalAmountPackagingCosts>0</TotalAmountPackagingCosts>
+		</Totals>
+	</AmountsSummary>
+	<CheckValue>100</CheckValue>
+</iVATEngineInput>]]></document>
+    </AnalyseDocument>
+  </soap:Body>
+</soap:Envelope>
