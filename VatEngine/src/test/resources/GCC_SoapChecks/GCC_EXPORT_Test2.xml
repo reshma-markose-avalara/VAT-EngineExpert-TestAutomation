@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <AnalyseDocument xmlns="http://tempuri.org/">
+      <document><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://www.vatat.com/xml/vatat_invoice_view_jscript.xsl"?>
+<iVATEngineInput>
+	<Supplier>
+		<ID>21536</ID>
+		<Name>BETRADING NV</Name>
+		<Address>KERKSTRAAT 17</Address>
+		<ZIP>2000</ZIP>
+		<City>ANTWERPEN</City>
+		<Country>BE</Country>
+		<RegOfCommerce/>
+		<BancAccountNumber/>
+		<IBAN/>
+		<BIC/>
+		<TelephoneNumber/>
+		<FaxNumber/>
+		<EmailAddress/>
+		<SpecialType>8</SpecialType>
+		<DeductionType>0</DeductionType>
+		<VATNumberSupplier Country="BE">
+			<VATNumber>BE012345678</VATNumber>
+			<VATNumberType>1</VATNumberType>
+			<Name/>
+			<Address1/>
+			<Address2/>
+			<Address3/>
+			<TaxNumber/>
+			<BelongsToFiscalUnit>0</BelongsToFiscalUnit>
+		</VATNumberSupplier>
+		<CountryChosenVATNumber>BE</CountryChosenVATNumber>
+	</Supplier>
+	<Customer>
+		<ID>112210</ID>
+		<Name>AECOMPANY</Name>
+		<Address/>
+		<ZIP/>
+		<City/>
+		<EmailAddress/>
+		<Country>AE</Country>
+		<SpecialType>0</SpecialType>
+		<VATNumberCustomer Country="AE">
+			<VATNumber>AE123456789</VATNumber>
+			<VATNumberType>1</VATNumberType>
+			<Name/>
+			<Address1/>
+			<Address2/>
+			<Address3/>
+			<RequiredOnInvoicePicture>false</RequiredOnInvoicePicture>
+			<BelongsToFiscalUnit>0</BelongsToFiscalUnit>
+		</VATNumberCustomer>
+		<CountryChosenVATNumber>AE</CountryChosenVATNumber>
+		<TypeOfGoods>0</TypeOfGoods>
+	</Customer>
+	<InvoiceProperties>
+		<DocumentType>0</DocumentType>
+		<Disconto>0</Disconto>
+		<Currency1>EUR</Currency1>
+		<InvoiceNumber/>
+		<ReferenceInvoiceNumber/>
+		<InvoiceDate>2019-02-08</InvoiceDate>
+		<OfficialLanguage>1</OfficialLanguage>
+	</InvoiceProperties>
+	<Item ID="1">
+		<Properties>
+			<Description/>
+			<InternationalDescription LanguageID="1">roerende goederen / geen installatie (-100-)</InternationalDescription>
+			<InternationalDescription LanguageID="2">biens mobiliers / pas d&#180;installation (-100-)</InternationalDescription>
+			<InternationalDescription LanguageID="3">Movable tangible property / No installation (-100-)</InternationalDescription>
+			<InternationalDescription LanguageID="5">Mobilien / Keine Installation (-100 -) </InternationalDescription>
+			<TaricCode/>
+			<Amounts CurrencyNumber="1">
+				<UnitPriceExclVAT>100</UnitPriceExclVAT>
+				<TotalAmountExclVAT>100</TotalAmountExclVAT>
+				<PackagingCosts>0</PackagingCosts>
+			</Amounts>
+			<Number>1</Number>
+			<Unit/>
+			<VATRate>0</VATRate>
+			<Reduction>0</Reduction>
+			<AdditionalProperties>
+				<PropertiesPerCountry Country="BE">
+					<VATRateCode>S</VATRateCode>
+				</PropertiesPerCountry>
+				<PropertiesPerCountry Country="AE">
+					<VATRateCode>S</VATRateCode>
+				</PropertiesPerCountry>
+				<EngineParameter1>AAAA</EngineParameter1>
+				<EngineParameter2/>
+				<EngineParameter3/>
+			</AdditionalProperties>
+			<ItemClassificationCode>100</ItemClassificationCode>
+			<OutOfVAT>0</OutOfVAT>
+			<ReportingProperties>
+				<CommodityCode/>
+			</ReportingProperties>
+		</Properties>
+		<Conditions>
+			<ShipFrom>
+				<CountryDeparture>BE</CountryDeparture>
+			</ShipFrom>
+			<ShipTo>
+				<CountryArrival>AE</CountryArrival>
+			</ShipTo>
+			<Installation>0</Installation>
+			<SupplyIn>0</SupplyIn>
+			<Transporter>0</Transporter>
+			<Importer>1</Importer>
+			<DateTransaction>2019-02-08</DateTransaction>
+		</Conditions>
+		<Mentioning Country="BE">
+			<Number>35</Number>
+			<Text>Exempté de TVA - Art. 39, §1, 1° CTVA / exonéré   ||  Article 146, paragraphe 1, point a) - Directive 2006/112</Text>
+		</Mentioning>
+		<AdditionalMentioning>
+			<Text>De goederen worden niet geïnstalleerd. / The goods are not installed.</Text>
+		</AdditionalMentioning>
+		<AdditionalMentioning>
+			<Text>Verkoper vervoert van België naar Verenigde Arabische Emiraten. / The seller transports from Belgium to United Arab Emirates.</Text>
+		</AdditionalMentioning>
+	</Item>
+	<AmountsSummary CurrencyNumber="1">
+		<VATTotals VATRate="0">
+			<AmountDisconto>0</AmountDisconto>
+			<AmountExclVAT>100</AmountExclVAT>
+			<AmountVAT>0</AmountVAT>
+		</VATTotals>
+		<Totals>
+			<TotalAmountVAT>0</TotalAmountVAT>
+			<TotalAmountInclVAT>100</TotalAmountInclVAT>
+			<TotalAmountDisconto>0</TotalAmountDisconto>
+			<TotalAmountInclVATCash>100</TotalAmountInclVATCash>
+			<TotalAmountPackagingCosts>0</TotalAmountPackagingCosts>
+		</Totals>
+	</AmountsSummary>
+	<CheckValue>100</CheckValue>
+</iVATEngineInput>]]></document>
+    </AnalyseDocument>
+  </soap:Body>
+</soap:Envelope>

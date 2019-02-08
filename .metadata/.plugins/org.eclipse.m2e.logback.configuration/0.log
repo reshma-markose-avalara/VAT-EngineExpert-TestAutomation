@@ -73,3 +73,11 @@
 2019-01-18 11:24:33,467 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\shubham.shahapurkar\Documents\GitHub\VAT-EngineExpert-TestAutomation\VatEngine\src\main\resources
 2019-01-18 11:24:33,467 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-01-18 11:24:33,469 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2019-02-08 11:28:17,105 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Automation:VatEngine:0.0.1-SNAPSHOT @ C:\Users\shubham.shahapurkar\Documents\GitHub\VAT-EngineExpert-TestAutomation\VatEngine\pom.xml.
+2019-02-08 11:28:19,134 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 11:28:19,145 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 59 resources
+2019-02-08 11:28:20,042 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Automation:VatEngine:0.0.1-SNAPSHOT @ C:\Users\shubham.shahapurkar\Documents\GitHub\VAT-EngineExpert-TestAutomation\VatEngine\pom.xml.
+2019-02-08 11:28:22,360 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 11:28:22,361 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\shubham.shahapurkar\Documents\GitHub\VAT-EngineExpert-TestAutomation\VatEngine\src\main\resources
+2019-02-08 11:28:22,362 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 11:28:22,365 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
